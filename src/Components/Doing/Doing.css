@@ -1,0 +1,36 @@
+.main-Offer-card{
+    padding: 20px 0px;
+    }
+    .Offer-card {
+      width: 350px;
+      background-color: #f0f0f0;
+      padding: 40px;
+      margin-right: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      text-align: center;
+    }
+    .Offer-card:hover {
+      transform: scale(1.1);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .Offer-card h1 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    
+    .Offer-card p {
+      font-size: 16px;
+      color: #333;
+    }
+    
+    
+    @media (max-width: 768px) {
+      /* Apply different styles for small viewports */
+      .Offer-card {
+        margin-right : 0px;
+        margin-bottom: 20px;
+        width: 100%; /* Make the card full width on small screens */
+        box-shadow: none; /* Remove the box shadow on small screens */
+      }
+    }

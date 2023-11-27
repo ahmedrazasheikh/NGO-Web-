@@ -1,0 +1,12 @@
+.left-icon:hover{
+background-color: #0F4A7C;
+color: white;
+text-align: center;
+border-radius: 60%;
+}
+
+.right-icon:hover{
+    color: white;
+    border-radius: 60%;
+    background-color: #0F4A7C;
+}
