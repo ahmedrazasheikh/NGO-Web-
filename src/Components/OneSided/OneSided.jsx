@@ -30,7 +30,7 @@ const OneSided = () => {
 
   return (
     <>
-      <div className='w-full h-screen flex items-center justify-center'>
+      <div className='w-full my-16 flex items-center justify-center'>
         <div className='w-full max-w-5xl flex flex-col md:flex-row my-4'>
           <div className='right-animation w-full md:w-3/6'>
             <img

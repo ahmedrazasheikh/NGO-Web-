@@ -11,7 +11,7 @@ const DetailPage = () => {
   }
   
 
-  const { title, image, description } = state;
+  const { title, image, description, CollectedAmount ,requiredAmout , AmountRemain} = state;
 console.log(title)
   return (
    <>
@@ -29,9 +29,9 @@ console.log(title)
           <h1 className="text-5xl font-bold my-4">  {title || ''}</h1>
 
           <p className="text-gray-700 mb-4">{description || ''}</p>
-          <p className="text-blue-500 mb-2 text-xl ">Amount Required: 2 Lakh</p>
-          <p className="text-green-500 mb-2 text-xl ">Collected Amount: $750</p>
-          <p className="text-red-500 mb-4 text-xl ">Amount Remaining: $250</p>
+          <p className="text-blue-500 mb-2 text-xl ">Amount Required: {requiredAmout || ''}</p>
+          <p className="text-green-500 mb-2 text-xl ">Collected Amount: {CollectedAmount || ''}</p>
+          <p className="text-red-500 mb-4 text-xl ">Amount Remaining: {AmountRemain || ''} </p>
           <button onClick={()=>{alert("Working on it!!!")}} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Donate Now
           </button>

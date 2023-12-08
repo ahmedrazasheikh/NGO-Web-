@@ -8,10 +8,10 @@ const Card = ({ imageUrl, title, description, onClick }) => {
     }
     return description.slice(0, num) + '...'
   }
-  
+
   let shortText =    truncateString(description , 210)
   return (
-    <div  onClick={onClick} style={{"marginBottom" : "20px "}} className="CardHandle max-w-xs w-full bg-white py-4 px-2 rounded-md shadow-md">
+    <div    onClick={onClick} style={{"marginBottom" : "20px" }} className="CardHandle max-w-xs w-full bg-white py-4 px-2 rounded-md shadow-md">
       <img
         className="w-full  md:h-36 h-auto  object-cover mb-4 rounded-md"
         src={imageUrl}

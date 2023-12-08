@@ -3,12 +3,13 @@ import Header from '../../Components/Header/Header'
 import Slider from '../../Components/Slider/Slider'
 import Contact_Form from '../../Components/Contact-Form/Contact_Form'
 import Footer from '../../Components/Footer/Footer'
+import ImageSection from '../../Components/ImageSection/ImageSection'
 
 const Contact_us = () => {
   return (
     <>
      <Header/>
-    <Slider/>
+     <Slider/>
     <Contact_Form/>
     <Footer/>
     </>

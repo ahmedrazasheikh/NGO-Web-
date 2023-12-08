@@ -91,7 +91,7 @@ const ContactForm = () => {
               </div>
               <div className="text-center">
                 <button
-                  style={{ background: '#0B667D' }}
+                  style={{ background: '#0D6DB7' }}
                   type="submit"
                   className="w-full text-white px-6 py-3 font-semibold rounded-md transition duration-300 ease-in-out transform hover:scale-105"
                 >

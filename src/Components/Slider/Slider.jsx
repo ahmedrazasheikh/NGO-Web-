@@ -51,20 +51,20 @@ const Slider = () => {
     {/* Left Icon */}
     <div className="left-icon absolute top-1/2 left-0 transform -translate-y-1/2">
       <button
-        className="text-white font-semibold px-4 py-2 rounded-lg mr-2 hover:text-blue-700"
+        className="text-white font-semibold px-4 py-2 rounded-lg mr-2"
         onClick={prevImage}
       >
-        <FontAwesomeIcon   className='Icon-white' style={{ "color": "#0B667D" }} icon={faChevronLeft} size="2x" />
+        <FontAwesomeIcon   className='Icon-white  lefticooo' icon={faChevronLeft} size="2x" />
       </button>
     </div>
   
     {/* Right Icon */}
     <div className="right-icon absolute top-1/2 right-0 transform -translate-y-1/2">
       <button
-        className="text-white font-semibold px-4 py-2 rounded-lg ml-2 hover:text-blue-700"
+        className="text-white font-semibold px-4 py-2 rounded-lg ml-2"
         onClick={nextImage}
       >
-        <FontAwesomeIcon   className='Icon-white' style={{ "color": "#0B667D" }} icon={faChevronRight} size="2x" />
+        <FontAwesomeIcon   className='Icon-white righticooo' icon={faChevronRight} size="2x" />
       </button>
     </div>
   </div>

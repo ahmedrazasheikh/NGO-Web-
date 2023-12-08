@@ -20,20 +20,45 @@ const Doing = () => {
   }, []);
   return (
     <>
-   <div className='flex flex-wrap justify-center bg-white  main-Offer-card  '>
-      <div  className="Offer-card animate-from-bottom">
-      <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/onlinesadqah.png' />
-        <h1 className='font-bold'  >Financial Freedom</h1>
-      </div>
-      <div  className="Offer-card animate-from-bottom">
-      <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/welfare.png' />
-        <h1 className='font-bold'  >WELFARE</h1>
-      </div>
-      <div  className="Offer-card animate-from-bottom">
-      <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/medical.png' />
-        <h1  className='font-bold'  >MEDICAL</h1>
-      </div>
-    </div>
+ <div className='card-wrap-main pb-12' >
+
+
+
+ <div class="card-wrap">
+  <div class="card-header one">
+  <img      src='https://saylaniweb-home.web.app/images/onlinesadqah.png' />
+  </div>
+  <div class="card-content">
+    <h1 class="card-title">Financial Freedom</h1>
+    <p class="card-text">Make unforgettable family memories with our carefully planned vacation packages designed to cater to all ages and interests.</p>
+  
+ </div>
+</div>
+<div class="card-wrap">
+  <div class="card-header two">
+  <img    src='https://saylaniweb-home.web.app/images/welfare.png' />
+  </div>
+  <div class="card-content">
+    <h1 class="card-title">WELFARE</h1>
+    <p class="card-text">Make unforgettable family memories with our carefully planned vacation packages designed to cater to all ages and interests.</p>
+  
+ </div>
+</div>
+<div class="card-wrap">
+  <div class="card-header three">
+  <img    src='https://saylaniweb-home.web.app/images/medical.png' />
+
+  </div>
+  <div class="card-content">
+    <h1 class="card-title">MEDICAL</h1>
+    <p class="card-text">Make unforgettable family memories with our carefully planned vacation packages designed to cater to all ages and interests.</p>
+  
+ </div>
+</div>
+ </div>
+    
+
+
 
     </>
   )

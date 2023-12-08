@@ -1,12 +1,24 @@
+.lefticooo{
+    color:#0F4A7C ;
+}
+.righticooo{
+    color:#0F4A7C ;
+}
 .left-icon:hover{
 background-color: #0F4A7C;
 color: white;
 text-align: center;
 border-radius: 60%;
 }
+.left-icon:hover .lefticooo {
+    color: white;
+    }
 
 .right-icon:hover{
     color: white;
     border-radius: 60%;
     background-color: #0F4A7C;
+}
+.right-icon:hover .righticooo{
+    color: white;
 }

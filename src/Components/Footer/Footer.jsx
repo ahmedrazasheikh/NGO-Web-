@@ -6,7 +6,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="text-white md:py-8 py-8 md:px-0  px-6  footer-image">
+    <footer     className="text-white md:py-8 py-8 md:px-0  px-6  footer-image">
       <div className="max-w-7xl mx-auto  sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
           <div className=" sm:col-span-1">

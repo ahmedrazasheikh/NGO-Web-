@@ -31,7 +31,6 @@ const Providing = () => {
 
   return (
         <>
-        {/* leftCardAnimation */}
         <div className=" elementor-form-fields-wrapper elementor-labels-">
     <div className="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-name elementor-col-20 elementor-md-25 elementor-field-required">
         <div className=" flex flex-col items-center justify-center elementor-field elementor-select-wrapper remove-before text-center">

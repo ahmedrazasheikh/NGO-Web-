@@ -21,20 +21,40 @@ const DoingSec = () => {
 
   return (
     <>
-   <div className='flex flex-wrap justify-center bg-white  main-Offer-card  '>
-      <div   className="animate-from-bottom Offer-card">
-      <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/Dastarkhwan.png' />
-        <h1 className='font-bold' >Niaz</h1>
-    </div>
-      <div  className="animate-from-bottom Offer-card">
-      <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/ROPLANT.png' />
-        <h1 className='font-bold' >RO PLANT</h1>
-      </div>
-      <div  className="animate-from-bottom Offer-card">
-      <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/education.png' />
-        <h1 className='font-bold'  >  EDUCATION</h1>
-      </div>
-    </div>
+   <div className='card-wrap-main' >
+
+
+
+<div class="card-wrap">
+ <div class="card-header one">
+ <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/Dastarkhwan.png' />
+ </div>
+ <div class="card-content">
+   <h1 class="card-title">Niaz</h1>
+   <p class="card-text">Make unforgettable family memories with our carefully planned vacation packages designed to cater to all ages and interests.</p>
+ 
+</div>
+</div>
+<div class="card-wrap">
+ <div class="card-header two">
+ <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/ROPLANT.png' />
+ </div>
+ <div class="card-content">
+   <h1 class="card-title">RO PLANT</h1>
+   <p class="card-text">Make unforgettable family memories with our carefully planned vacation packages designed to cater to all ages and interests.</p> 
+</div>
+</div>
+<div class="card-wrap">
+ <div class="card-header three">
+ <img    src='https://saylaniweb-home.web.app/images/education.png' />  
+ </div>
+ <div class="card-content">
+   <h1 class="card-title">EDUCATION</h1>
+   <p class="card-text">Make unforgettable family memories with our carefully planned vacation packages designed to cater to all ages and interests.</p>
+ 
+</div>
+</div>
+</div>
 
     </>
   )
