@@ -25,28 +25,30 @@ const DoingSec = () => {
 
    <div class="card-wrap">
   <div class="card-header one">
-
-  <i class="text-4xl text-white animate-from-bottom  fas fa-utensils"></i>
+  <i class="text-4xl text-white animate-from-bottom  fa-solid fa-droplet"></i>
+  {/* <i class="text-4xl text-white animate-from-bottom  fas fa-utensils"></i> */}
 
   </div>
   <div class="card-content">
-    <h1 class="card-title">Niaz</h1>
-    <p class="card-text">Niaz distribution in Majalis. In the spirit of communal gatherings, we provide nourishing meals that go beyond sustenance. Our initiative not only aims to satisfy hunger but also to create a sense of togetherness and shared experiences during Majalis.</p>
-  
- </div>
+   <h1 class="card-title">Water Projects</h1>
+   <p class="card-text">Ensuring access to clean and sustainable water sources. Our initiatives range from well drilling to water purification, aiming to alleviate water scarcity and improve the health and well-being of communities. By providing a lifeline through these water projects.</p> 
+</div>
+ 
 </div>
 
 
 <div class="card-wrap">
- <div class="card-header two">
- <i class="text-4xl text-white animate-from-bottom  fa-solid fa-droplet"></i>
+ <div style={{"overflow" : "hidden"}} class="card-header two ">
+ <img   className='w-26 h-24' src="https://www.pngkey.com/png/full/275-2758988_dinner-icon-dinner.png" alt="" />
+
 
  {/* <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/ROPLANT.png' /> */}
  </div>
  <div class="card-content">
-   <h1 class="card-title">Water Projects</h1>
-   <p class="card-text">Ensuring access to clean and sustainable water sources. Our initiatives range from well drilling to water purification, aiming to alleviate water scarcity and improve the health and well-being of communities. By providing a lifeline through these water projects.</p> 
-</div>
+    <h1 class="card-title">Niaz</h1>
+    <p class="card-text">Niaz distribution in Majalis. In the spirit of communal gatherings, we provide nourishing meals that go beyond sustenance. Our initiative not only aims to satisfy hunger but also to create a sense of togetherness and shared experiences during Majalis.</p>
+  
+ </div>
 </div>
 <div class="card-wrap">
  <div class="card-header three">

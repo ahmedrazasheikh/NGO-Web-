@@ -84,7 +84,7 @@
   /* background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2)); */
 }
 .card-header.two{
-  background-color: rgb(131, 125, 125);
+  background-color: #91908F;
 
   /* background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2)); */
 }

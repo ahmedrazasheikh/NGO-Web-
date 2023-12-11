@@ -57,8 +57,9 @@ const About_us = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-3/6 right-animation">
+          <div  className="w-full md:w-3/6 right-animation">
             <img
+            style={{"height" : "100%"}}
               src={img1}
               alt=""
               className="w-full"

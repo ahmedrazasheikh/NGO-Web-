@@ -35,6 +35,7 @@ const OneSided = () => {
         <div className='w-full max-w-5xl flex flex-col md:flex-row my-4'>
           <div className='right-animation w-full md:w-3/6'>
             <img
+              style={{"height" : "100%"}}
               src={img1}
               alt=""
               className='w-full'

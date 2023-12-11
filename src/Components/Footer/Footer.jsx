@@ -16,7 +16,7 @@ function Footer() {
         </span>
       </a>
             <p className="text-sm py-4 sm:py-6">
-            KHALAF AL SALIH started working in 2009 from a small camp that provided rescue and disaster management services. It expanded its branches and succeeded to establish an effective infrastructure that deals with social services, and welfare nationwide.
+            Welcome to the Khalaf Al Salih Foundation, dedicated to uplifting rural Pakistan for over a decade. We provide clean water, build homes, offer healthcare, and empower local businesses for lasting positive change.
             </p>
          
           </div>

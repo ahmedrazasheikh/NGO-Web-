@@ -15,3 +15,6 @@
   font-size: 16px;
   color: #333;
 }
+.end-card:hover{
+  transform: scale(1.1);
+}
