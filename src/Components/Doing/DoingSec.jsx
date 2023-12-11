@@ -23,22 +23,25 @@ const DoingSec = () => {
     <>
    <div className='card-wrap-main' >
 
+   <div class="card-wrap">
+  <div class="card-header one">
 
+  <i class="text-4xl text-white animate-from-bottom  fas fa-utensils"></i>
 
-<div class="card-wrap">
- <div class="card-header one">
-   {/* <i class="text-4xl  animate-from-bottom   icon-food"></i> */}
- <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/Dastarkhwan.png' />
+  </div>
+  <div class="card-content">
+    <h1 class="card-title">Niaz</h1>
+    <p class="card-text">Niaz distribution in Majalis. In the spirit of communal gatherings, we provide nourishing meals that go beyond sustenance. Our initiative not only aims to satisfy hunger but also to create a sense of togetherness and shared experiences during Majalis.</p>
+  
  </div>
- <div class="card-content">
-   <h1 class="card-title">Niaz</h1>
-   <p class="card-text">Niaz distribution in Majalis. In the spirit of communal gatherings, we provide nourishing meals that go beyond sustenance. Our initiative not only aims to satisfy hunger but also to create a sense of togetherness and shared experiences during Majalis.</p>
- 
 </div>
-</div>
+
+
 <div class="card-wrap">
  <div class="card-header two">
- <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/ROPLANT.png' />
+ <i class="text-4xl text-white animate-from-bottom  fa-solid fa-droplet"></i>
+
+ {/* <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/ROPLANT.png' /> */}
  </div>
  <div class="card-content">
    <h1 class="card-title">Water Projects</h1>
@@ -47,7 +50,8 @@ const DoingSec = () => {
 </div>
 <div class="card-wrap">
  <div class="card-header three">
- <img    src='https://saylaniweb-home.web.app/images/education.png' />  
+ <i class="text-4xl text-white animate-from-bottom  fas fa-mosque"></i>
+
  </div>
  <div class="card-content">
    <h1 class="card-title">Mosques</h1>
