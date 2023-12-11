@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BeatLoader } from 'react-spinners';
+import BasicModal2 from '../Modal/Modal2';
 const Edit_Complete = () => {
 
 
@@ -10,7 +11,19 @@ const Edit_Complete = () => {
   const [productsBoolean, setProductsBoolean] = useState(false);
   const [Delete , setdelete] = useState(false);
 
-
+  const handleCheckboxChange = async (id) => {
+    // deleteData(id)
+    // Make your API call here using the id
+    try {
+      const response = await axios.post(`https://busy-tan-dhole-wig.cyclic.app/api/v1/CompletedProject2/${id}`, { /* your payload */ });
+      console.log("Checkbox API Response: ", response.data);
+      window.location.reload(true);
+     
+    }
+    catch (error) {
+      console.log("Error in checkbox API call", error);
+    }
+  };
 
 
 
@@ -60,13 +73,34 @@ const Edit_Complete = () => {
                       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 320 512"><path d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"/></svg></a>
                   </div>
               </th>
+
+              <th scope="col" class="px-6 py-3">
+                  <div class="flex items-center">
+                  COLLECTED AMOUNT  
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 320 512"><path d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"/></svg></a>
+                  </div>
+              </th>
+
+              
+              <th scope="col" class="px-6 py-3">
+                  <div class="flex items-center">
+                  EDIT 
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 320 512"><path d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"/></svg></a>
+                  </div>
+              </th>
               <th scope="col" class="px-6 py-3">
                   <div class="flex items-center">
                   Delete  
                       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 320 512"><path d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"/></svg></a>
                   </div>
               </th>
-             
+              <th scope="col" class="px-6 py-3">
+                  <div class="flex items-center">
+                 Transfer to Active Project
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 320 512"><path d="M27.66 224h264.7c24.6 0 36.89-29.78 19.54-47.12l-132.3-136.8c-5.406-5.406-12.47-8.107-19.53-8.107c-7.055 0-14.09 2.701-19.45 8.107L8.119 176.9C-9.229 194.2 3.055 224 27.66 224zM292.3 288H27.66c-24.6 0-36.89 29.77-19.54 47.12l132.5 136.8C145.9 477.3 152.1 480 160 480c7.053 0 14.12-2.703 19.53-8.109l132.3-136.8C329.2 317.8 316.9 288 292.3 288z"/></svg></a>
+                  </div>
+              </th>
+
              
           </tr>
       </thead>
@@ -84,12 +118,32 @@ const Edit_Complete = () => {
   {new Date(value.createdOn).toLocaleDateString()}
 </td>
 
-             
-              <td    className='lllololo'   onClick={()=>{
-                  deleteData(value._id)
-              }}  style={{"color" : "red" , "cursor" : "pointer" }    } class="px-6 py-4  ">
-              Delete
-              </td>
+<td className="px-6 py-4">
+  {value.collectedAmount}
+</td>       
+          
+<td class=" mr-8 text-right">
+                    <BasicModal2   Image = {value.imageUrl}    id={value._id}    />
+                </td>
+                <td    className='lllololo'   onClick={()=>{
+                    deleteData(value._id)
+                }}  style={{"color" : "red" , "cursor" : "pointer" }    } class="px-6 py-4  ">
+                Delete
+                </td>
+                <td className="px-6 py-4">
+            <label className="relative inline-flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                value=""
+                className="sr-only peer"
+                onChange={() => handleCheckboxChange(value._id)}
+              />
+              <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+            </label>
+          </td>
+
+
+
               <td class="px-6 py-4 text-right">
                   {/* <BasicModal   Image = {value.imageUrl}    id={value._id}    /> */}
               </td>

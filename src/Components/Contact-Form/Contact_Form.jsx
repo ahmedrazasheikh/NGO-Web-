@@ -36,17 +36,17 @@ const ContactForm = () => {
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div className="mb-8 text-center">
   <h2 style={{"color" : "black"}} className="Bottoom-Animation font-bold text-3xl sm:text-5xl  dark:text-white elevated-animate-bottom">
-    Empower Change with Us!
+   You Can Make a Diffrence!
   </h2>
   <p className="Bottoom-Animation mx-auto mt-4 text-lg text-gray-700 dark:text-gray-300 elevated-animate-bottom">
-    Join our mission to make a positive impact. Your support means the world to us!
+  Participate in our endeavor to create a meaningful impact. Your support holds immense value for us and is pivotal in advancing our mission.
   </p>
 </div>
 
         <div className="flex items-center justify-center">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-8 max-w-md w-full">
           <h2  style={{"color" : "black"}} className="Bottoom-Animation mb-4 text-2xl font-bold">
-  Ready to Make a Difference?
+          Reach Out To Us:
 </h2>
 
             <form id="contactForm">

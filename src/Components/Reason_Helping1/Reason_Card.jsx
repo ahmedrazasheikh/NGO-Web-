@@ -23,41 +23,40 @@ const Reason_Card = () => {
       }, []);
   return (
     <>
-     <div class="flex flex-wrap justify-center items-center">
-      <div class="animate-from-bottom w-1/5	 rounded overflow-hidden shadow-lg mr-4">
-      <img class="w-full h-64" src="https://themewagon.github.io/charifit/img/help/1.png" alt="Sunset in the mountains"/>
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Collecting Fund</div>
-          <p class="text-gray-700">
-          Collecting funds refers to the process of gathering financial contributions or donations from individuals, organizations, or entities for a specific purpose or cause. This activity is common in various sectors, including non-profit organizations, 
-          </p>
-        </div>
-        
-      </div>
-      <div class="animate-from-bottom w-1/5 rounded overflow-hidden shadow-lg mr-4">
-      <img class="w-full h-64" src="https://themewagon.github.io/charifit/img/help/2.png" alt="Sunset in the mountains"/>
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Blood Camp</div>
-          <p class="text-gray-700 ">
-          Step into the realm of altruism and life-saving at the "Blood Camp," a dedicated initiative that brings communities together to contribute to a noble cause. This unique event serves as a crucial platform for individuals to donate blood,</p>
-        </div>
-       
-      </div>
-      <div class="animate-from-bottom w-1/5 rounded overflow-hidden shadow-lg mr-4">
-      <img class="w-full h-64	" src="https://themewagon.github.io/charifit/img/help/3.png" alt="Sunset in the mountains"/>
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Friendly Volunteer</div>
-          <p class="text-gray-700">
-           
-Title: Friendly Volunteer
+ <div class="flex flex-wrap justify-center items-center">
 
-Description:
-In a world where kindness is a currency, the "Friendly Volunteer" stands out as a beacon of warmth and goodwill, dedicated to making a positive impact in the lives of others. These individuals embody the spirit of selflessness.
-          </p>
-        </div>
-     
-      </div>
+<div class=" md:mr-6 mr-0  animate-from-bottom w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 rounded overflow-hidden shadow-lg mb-4">
+  <img class="w-full h-64" src="https://www.procurious.com/blog-content/2016/05/Community-Empowerment.jpg" alt="Sunset in the mountains" />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">Community Empowerment</div>
+    <p class="text-gray-700">
+      At Khalaf Al Salih Foundation, we believe in the transformative power of community empowerment. By providing loans for small businesses, supporting local farmers in cultivating their lands, and constructing essential infrastructure like mosques and water sources, we aim to empower individuals and communities to become self-sufficient.
+    </p>
+  </div>
 </div>
+
+<div class=" md:mr-6 mr-0  animate-from-bottom w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 rounded overflow-hidden shadow-lg mb-4">
+  <img class="w-full h-64" src="https://theimmigrater.com/wp-content/uploads/2020/07/1-11.jpg" alt="Sunset in the mountains" />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">Humanitarian Compassion</div>
+    <p class="text-gray-700">
+      Description: Our initiatives are fueled by a deep sense of humanitarian compassion. We recognize the basic human needs for clean water, shelter, healthcare, and spiritual spaces. Through our diverse projects, including medical support, water projects, mosque construction, and Niaz distribution, we strive to alleviate suffering and uplift those facing adversity.
+    </p>
+  </div>
+</div>
+
+<div class=" md:mr-6 mr-0  animate-from-bottom w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 rounded overflow-hidden shadow-lg mb-4">
+  <img class="w-full h-64" src="https://the-ethos.co/wp-content/uploads/2021/09/spirituality-climate-change-ethos-1536x1024.jpg" alt="Sunset in the mountains" />
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">Cultural and Spiritual Enrichment</div>
+    <p class="text-gray-700">
+      Description: Khalaf Al Salih Foundation is committed to enriching the cultural and spiritual fabric of the communities we serve. Our mosque construction projects and Niaz distribution in Majalis are inspired by a deep respect for cultural and religious values. By providing spaces for worship and communal gatherings.
+    </p>
+  </div>
+</div>
+
+</div>
+
     </>
   );
 };

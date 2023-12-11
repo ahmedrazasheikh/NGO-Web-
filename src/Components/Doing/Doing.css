@@ -65,6 +65,7 @@
   
 }
 .card-text{
+  width: 152%;
   text-align: center;
   font-size: 12px;
   margin-bottom: 20px;

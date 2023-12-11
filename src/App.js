@@ -9,6 +9,8 @@ import Detail_Complete from "./Components/Detail_Page/Detail_Complete/Detail_Com
 import Nested_Active_Project from "./Pages/Nested_Active_Project/Nested_Active_Project";
 import Nested_Acheived_Project from "./Pages/Nested_Acheived_Projects/Nested_Acheived_Projects";
 import Dashboard from "./Components/Dashboard/Dashboard";
+import Payment from './Components/Payment/Payment';
+
 function App() {
   return (
 <>
@@ -24,7 +26,7 @@ function App() {
           <Route path="/Nested_Active_Project" element={<Nested_Active_Project/>}/>
           <Route path="/Achieved-Projects/SubCategory" element={<Nested_Acheived_Project/>}/>
           <Route path="/Dashboard" element={<Dashboard/>}/>
-
+          <Route path='/Payment' element={<Payment/>}/>
       </Routes>
     </BrowserRouter>
 </>    

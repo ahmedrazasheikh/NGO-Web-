@@ -26,32 +26,38 @@ const Doing = () => {
 
  <div class="card-wrap">
   <div class="card-header one">
-  <img      src='https://saylaniweb-home.web.app/images/onlinesadqah.png' />
+  <i class="text-4xl text-white animate-from-bottom  fas fa-hand-holding-water"></i>
   </div>
   <div class="card-content">
     <h1 class="card-title">Financial Freedom</h1>
-    <p class="card-text">Make unforgettable family memories with our carefully planned vacation packages designed to cater to all ages and interests.</p>
+    <p class="card-text">Our loan services are tailored to support individuals with the drive to start small businesses and those possessing valuable land but lacking the necessary investment to cultivate new crops. By providing accessible and fair financing.</p>
   
  </div>
 </div>
 <div class="card-wrap">
   <div class="card-header two">
+  {/* <i class="text-4xl text-black fa-solid fa-family"></i> */}
   <img    src='https://saylaniweb-home.web.app/images/welfare.png' />
   </div>
   <div class="card-content">
     <h1 class="card-title">WELFARE</h1>
-    <p class="card-text">Make unforgettable family memories with our carefully planned vacation packages designed to cater to all ages and interests.</p>
+    <p class="card-text">Our welfare services extend a compassionate hand to those in need. From providing essential supplies to offering financial assistance and support, we are committed to uplifting the vulnerable members of our communities.</p>
   
  </div>
 </div>
 <div class="card-wrap">
   <div class="card-header three">
-  <img    src='https://saylaniweb-home.web.app/images/medical.png' />
 
+
+ 
+  <i class=" animate-from-bottom   fa fa-stethoscope"></i>
+ 
+  
+  
   </div>
   <div class="card-content">
     <h1 class="card-title">MEDICAL</h1>
-    <p class="card-text">Make unforgettable family memories with our carefully planned vacation packages designed to cater to all ages and interests.</p>
+    <p class="card-text">Committed to the well-being of our communities, we provide crucial healthcare assistance, including medical aid, supplies, and financial support for essential treatments. Our goal is to ensure that every individual has access to quality healthcare.</p>
   
  </div>
 </div>

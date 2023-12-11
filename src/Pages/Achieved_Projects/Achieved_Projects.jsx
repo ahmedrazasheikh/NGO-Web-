@@ -67,7 +67,7 @@ setProductsBoolean(true)
   products.map((card, index) => (
     <Acheivedcard
       key={index}
-      imageUrl={card.imageUrl}
+      imageUrl={card.imageUrl[0]}
       title={card.projectName}
       description={card.projectDescription}
       buttonText={'Donate Now'}

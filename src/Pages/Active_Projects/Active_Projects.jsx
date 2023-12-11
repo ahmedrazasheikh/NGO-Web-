@@ -67,7 +67,7 @@ else{
   products.map((value, index) => (
     <Cards
       key={index}
-      imageUrl={value.imageUrl}
+      imageUrl={value.imageUrl[0]}
       title={value.projectName}
       description={value.projectDescription}
       onClick={() =>

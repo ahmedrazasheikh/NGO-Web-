@@ -3,6 +3,11 @@ import { useLocation } from 'react-router-dom';
 import Footer from '../../Footer/Footer';
 import Header from '../../Header/Header';
 import Dropdown from '../../Dropdown/Dropdown';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+
+
 
 const Detail_Complete = () => {
   const { state } = useLocation() || {};
@@ -11,6 +16,14 @@ const Detail_Complete = () => {
     return null;
   }
 
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+
+    autoplay: true,
+    autoplaySpeed: 2000, 
+  };
   const { title, image, description } = state;
   console.log(image)
   console.log(description , typeof description)
@@ -24,12 +37,19 @@ console.log(parts)
    <div className="bg-gray-100 min-h-screen">
       <div className="max-w-screen-xl mx-auto p-6">
         <div className="bg-white rounded shadow-lg p-8">
-          <div className="relative overflow-hidden mb-4 rounded-lg" style={{ height: '300px' }}>
+        <div className="  mb-4 rounded-lg" style={{ height: '300px' }}>
+          <Slider {...sliderSettings}>
+        {image.map((imageUrl, index) => (
+          <div     key={index}>
             <img
-              src={image || 'placeholder-image-url'}
-              alt="Image Not Found"
-              className="w-full h-full"
+              className="w-full   mb-12 h-96	 rounded-md"
+              src={imageUrl}
+              alt={`Card Image ${index + 1}`}
             />
+          </div>
+        ))}
+      </Slider>
+
           </div>
           <h1   style={{"color" : "#0B667D"}} className="text-5xl font-bold my-4">  {title || ''}</h1>
      

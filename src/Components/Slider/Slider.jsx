@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './Slider.css';
 const Slider = () => {
-  const images = ["https://welfare.org.pk/wp-content/uploads/2022/05/Web-Banners-WaterforAll-1.jpg", "https://welfare.org.pk/wp-content/uploads/2022/05/Web-Banners-OrphanCare-1.jpg", "https://welfare.org.pk/wp-content/uploads/2022/05/WebBanner-Educare-1.jpg", "https://welfare.org.pk/wp-content/uploads/2022/07/Mawakhat-Final-Home.jpg", "https://welfare.org.pk/wp-content/uploads/2022/05/Orphan-Home.jpg"];
+  const images = ["https://welfare.org.pk/wp-content/uploads/2022/05/Web-Banners-WaterforAll-1.jpg", "https://welfare.org.pk/wp-content/uploads/2022/05/Web-Banners-OrphanCare-1.jpg", "https://welfare.org.pk/wp-content/uploads/2022/05/WebBanner-Educare-1.jpg"];
   const headings = [' DISHWASHER', 'PLANETARY MIXER ', 'BENCH  REFRIGERATORS', '4 PIECE OVEN'];
   const paragraphs = [
     'Pure power, ultimate precision!',

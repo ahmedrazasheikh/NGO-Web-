@@ -3,8 +3,8 @@ import "./Current_Project.css";
 import axios from 'axios';
 
 const Current_Project = () => {
+  const [imageSrcList, setImageSrcList] = useState([]);
   const [projectName, setProjectName] = useState("");
-  const [amountRemain , setAmountRemain] = useState("");
   const [amountRequired, setAmountRequired] = useState("");
   const [collectedAmount, setCollectedAmount] = useState("");
   const [projectDescription, setProjectDescription] = useState("");
@@ -14,13 +14,26 @@ const Current_Project = () => {
   const pictureImageTxt = "Choose an image";
 
   const handleInputChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      setImageSrc(file);
+    const files = e.target.files;
+  
+    if (files && files.length > 0) {
+      const newImageSrcList = Array.from(files).map((file) => URL.createObjectURL(file));
+      setImageSrcList(newImageSrcList);
+
+      // Assuming you want to store an array of files
+      setSelectedFiles(files);
+      // If you want to display the first image
+      setImageSrc(files[0]);
+  
+      // If you want to display multiple images, you may need to loop through the files
+      // and render them in your UI
     } else {
+      setImageSrcList([]);
+      setSelectedFiles(null);
       setImageSrc(null);
     }
   };
+  
 
   const handleAddProject = async () => {
     // Reset validation errors
@@ -33,13 +46,16 @@ const Current_Project = () => {
     }
 
     const formData = new FormData();
-    formData.append('amountRemain', amountRemain);
     formData.append('projectName', projectName);
     formData.append('amountRequired', amountRequired);
     formData.append('collectedAmount', collectedAmount);
     formData.append('projectDescription', projectDescription);
-    formData.append('image', imageSrc);
-
+    if (selectedFiles && selectedFiles.length > 0) {
+      for (let i = 0; i < selectedFiles.length; i++) {
+        console.log(selectedFiles[i])
+        formData.append(`image${i + 1}`, selectedFiles[i]);
+      }
+    }
     try {
       const response = await axios.post('https://busy-tan-dhole-wig.cyclic.app/api/v1/AddProduct', formData, {
         headers: {
@@ -52,7 +68,7 @@ const Current_Project = () => {
    setCollectedAmount('')
    setProjectDescription('')
    setImageSrc('')
-   setAmountRemain('')
+   setImageSrcList([])
       console.log(response);
       // Handle response from backend if needed
     } catch (error) {
@@ -65,7 +81,9 @@ const Current_Project = () => {
     <div>
 
       <h1 className="text-4xl text-center">Add Current Project </h1>
-      {/* Display validation errors */}
+
+
+    
       {validationErrors.message && (
         <div className="text-red-500 mb-4">{validationErrors.message}</div>
       )}
@@ -109,7 +127,7 @@ const Current_Project = () => {
           className="block text-gray-700 text-sm font-bold mb-2"
           htmlFor="collectedAmount"
         >
-          Collected Amount
+          Amount Collected 
         </label>
         <input
           className="shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -120,36 +138,22 @@ const Current_Project = () => {
           onChange={(e) => setCollectedAmount(e.target.value)}
         />
       </div>
-      <div className="mb-4">
-        <label
-          className="block text-gray-700 text-sm font-bold mb-2"
-          htmlFor="collectedAmount"
-        >
-           Amount Remain 
-        </label>
-        <input
-          className="shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="collectedAmount"
-          type="text"
-          placeholder="Amout Remain"
-          value={amountRemain}
-          onChange={(e) => setAmountRemain(e.target.value)}
-        />
+
+      <div className="flex" >
+        {imageSrcList.map((imageSrc, index) => (
+          <label key={index} className="picture" tabIndex="0">
+            <span className="picture__image">
+              <img src={imageSrc} alt={`Uploaded ${index + 1}`} className="picture__img" />
+            </span>
+          </label>
+        ))}
       </div>
-      <label className="picture" htmlFor="picture__input" tabIndex="0">
-        <span className="picture__image ">
-          {imageSrc ? (
-            <img src={URL.createObjectURL(imageSrc)} alt="Uploaded" className="picture__img" />
-          ) : (
-            pictureImageTxt
-          )}
-        </span>
-      </label>
       <input
         type="file"
         name="picture__input"
         id="picture__input"
         onChange={handleInputChange}
+        multiple
       />
 
       <label
