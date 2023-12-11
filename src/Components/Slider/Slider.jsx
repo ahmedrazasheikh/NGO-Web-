@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './Slider.css';
+import img1 from '../../Images/Banner-1.jpg'
 const Slider = () => {
-  const images = ["https://welfare.org.pk/wp-content/uploads/2022/05/Web-Banners-WaterforAll-1.jpg", "https://welfare.org.pk/wp-content/uploads/2022/05/Web-Banners-OrphanCare-1.jpg", "https://welfare.org.pk/wp-content/uploads/2022/05/WebBanner-Educare-1.jpg"];
+  const images = [img1 , "https://welfare.org.pk/wp-content/uploads/2022/05/Web-Banners-OrphanCare-1.jpg", "https://welfare.org.pk/wp-content/uploads/2022/05/WebBanner-Educare-1.jpg"];
   const headings = [' DISHWASHER', 'PLANETARY MIXER ', 'BENCH  REFRIGERATORS', '4 PIECE OVEN'];
   const paragraphs = [
     'Pure power, ultimate precision!',

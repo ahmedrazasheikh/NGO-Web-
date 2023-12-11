@@ -1,6 +1,7 @@
 import {React , useEffect} from 'react'
 import './Doing.css'
 import '../../Animation.css'
+import img2 from '../../Images/dinner.png'
 const DoingSec = () => {
   useEffect(() => {
     const cards1 = document.querySelectorAll('.animate-from-bottom');
@@ -38,11 +39,11 @@ const DoingSec = () => {
 
 
 <div class="card-wrap">
- <div style={{"overflow" : "hidden"}} class="card-header two ">
- <img   className='w-26 h-24' src="https://www.pngkey.com/png/full/275-2758988_dinner-icon-dinner.png" alt="" />
+ <div  class="card-header two ">
+ {/* <img   className='w-26 h-24' src="https://www.pngkey.com/png/full/275-2758988_dinner-icon-dinner.png" alt="" /> */}
 
-
- {/* <img  className='w-16  m-auto'   src='https://saylaniweb-home.web.app/images/ROPLANT.png' /> */}
+ <i class="text-4xl  animate-from-bottom fa-solid fa-plate-utensils"></i>
+ <img  className='w-26 h-24  m-auto'   src={img2} />
  </div>
  <div class="card-content">
     <h1 class="card-title">Niaz</h1>
