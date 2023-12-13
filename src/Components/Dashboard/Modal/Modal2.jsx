@@ -20,6 +20,7 @@ const style = {
 };
 
 export default function BasicModal2({ id, Image }) {
+  const [selectedCity, setSelectedCity] = useState('');
   const [imageSrcList, setImageSrcList] = useState([]);
   const [open, setOpen] = React.useState(false);
   const navigate = useNavigate();
@@ -54,7 +55,9 @@ export default function BasicModal2({ id, Image }) {
       setImageSrc(null);
     }
   };
-
+  const handleCityChange = (event) => {
+    setSelectedCity(event.target.value);
+  };
   const sendData = (e) => {
     let id = e;
     const formData = new FormData();
@@ -62,6 +65,7 @@ export default function BasicModal2({ id, Image }) {
     formData.append("amountRequired", requiredAmout);
     formData.append("collectedAmount", amontCollected);
     formData.append("projectDescription", Description);
+    formData.append('projectCategory', selectedCity);
     if (selectedFiles && selectedFiles.length > 0) {
       for (let i = 0; i < selectedFiles.length; i++) {
         console.log(selectedFiles[i]);
@@ -85,7 +89,7 @@ export default function BasicModal2({ id, Image }) {
     <div>
       {/* <img src={} alt="" /> */}
       <Button
-        style={{ position: "relative", right: "75px" }}
+        style={{ position: "relative", right: "30px" }}
         onClick={handleOpen}
       >
         Edit
@@ -110,7 +114,31 @@ export default function BasicModal2({ id, Image }) {
             placeholder="Enter Project Name ."
             class="border border-gray-300 shadow p-3 w-full rounded mb-"
           />
+<div   className="mb-4" >
+      <label className="font-bold" htmlFor="citySelect ">Select a Project Category:</label>
+      <select id="citySelect" value={selectedCity} onChange={handleCityChange}>
+        <option value="">Select a city</option>
+        <option value="Sukkur">Sukkur</option>
+        <option value="Jacobabad">Jacobabad</option>
+        <option value="Badin">Badin</option>
+        <option value="Thar">Thar</option>
+        <option value="Larkana">Larkana</option>
+        <option value="Dadu">Dadu</option>
+        <option value="Rohri">Rohri</option>
+        <option value="Salehpat">Salehpat</option>
+        <option value="Khairpur">Khairpur</option>
+        <option value="Khanpur">Khanpur</option>
+        <option value="Shikarpur">Shikarpur</option>
+        <option value="Nawabshah">Nawabshah</option>
+        <option value="Gambat">Gambat</option>
+        <option value="Ghotki">Ghotki</option>
+        <option value="Qumbar">Qumbar</option>
+        <option value="Shahdatkot">Shahdatkot</option>
+        <option value="Rato Dero">Rato Dero</option>
+      </select>
 
+  
+    </div>
           <label htmlFor="" className=" text-black font-bold">
             {" "}
             Amount Collected :

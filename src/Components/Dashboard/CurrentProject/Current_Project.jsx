@@ -3,6 +3,7 @@ import "./Current_Project.css";
 import axios from 'axios';
 
 const Current_Project = () => {
+  const [selectedCity, setSelectedCity] = useState('');
   const [imageSrcList, setImageSrcList] = useState([]);
   const [projectName, setProjectName] = useState("");
   const [amountRequired, setAmountRequired] = useState("");
@@ -33,7 +34,10 @@ const Current_Project = () => {
       setImageSrc(null);
     }
   };
-  
+  const handleCityChange = (event) => {
+    setSelectedCity(event.target.value);
+  };
+
 
   const handleAddProject = async () => {
     // Reset validation errors
@@ -45,11 +49,15 @@ const Current_Project = () => {
       return;
     }
 
+
+
     const formData = new FormData();
     formData.append('projectName', projectName);
     formData.append('amountRequired', amountRequired);
     formData.append('collectedAmount', collectedAmount);
     formData.append('projectDescription', projectDescription);
+    formData.append('projectCategory', selectedCity);
+
     if (selectedFiles && selectedFiles.length > 0) {
       for (let i = 0; i < selectedFiles.length; i++) {
         console.log(selectedFiles[i])
@@ -104,6 +112,32 @@ const Current_Project = () => {
           onChange={(e) => setProjectName(e.target.value)}
         />
       </div>
+
+      <div   className="mb-4" >
+      <label className="font-bold" htmlFor="citySelect ">Select a Project Category:</label>
+      <select id="citySelect" value={selectedCity} onChange={handleCityChange}>
+        <option value="">Select a city</option>
+        <option value="Sukkur">Sukkur</option>
+        <option value="Jacobabad">Jacobabad</option>
+        <option value="Badin">Badin</option>
+        <option value="Thar">Thar</option>
+        <option value="Larkana">Larkana</option>
+        <option value="Dadu">Dadu</option>
+        <option value="Rohri">Rohri</option>
+        <option value="Salehpat">Salehpat</option>
+        <option value="Khairpur">Khairpur</option>
+        <option value="Khanpur">Khanpur</option>
+        <option value="Shikarpur">Shikarpur</option>
+        <option value="Nawabshah">Nawabshah</option>
+        <option value="Gambat">Gambat</option>
+        <option value="Ghotki">Ghotki</option>
+        <option value="Qumbar">Qumbar</option>
+        <option value="Shahdatkot">Shahdatkot</option>
+        <option value="Rato Dero">Rato Dero</option>
+      </select>
+
+  
+    </div>
 
       <div className="mb-4">
         <label

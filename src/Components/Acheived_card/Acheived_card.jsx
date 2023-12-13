@@ -10,7 +10,7 @@ const Acheivedcard = ({ imageUrl, title, description , onClick }) => {
   
   let shortText =    truncateString(description , 210)
   return (
-    <div  onClick={onClick} style={{"marginBottom" : "20px "}} className="Acheived-card max-w-xs w-full  bg-white py-4 px-2 rounded-md shadow-md relative">
+    <div  onClick={onClick}style={{"marginBottom" : "20px"  , height : "20rem" }} className="m-6 CardHandle max-w-xs w-full bg-white py-4 px-2 rounded-md shadow-md">
       <span style={{"background" : "#0B667D"}}  className="absolute top-0 left-0 text-white px-2 py-1 rounded-full ">Complete</span>
       <img
         className="w-full h-36 object-cover mb-4 rounded-md"
