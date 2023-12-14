@@ -1,6 +1,6 @@
 import { React, useEffect } from "react";
 import "../../Animation.css";
-import img1 from '../../Images/f930132363.jpg'
+import img1 from '../../Images/ABOUT-KHALAF-AL-SALIH.jpg'
 const About_us = () => {
   useEffect(() => {
     const cards1 = document.querySelectorAll(".right-animation");

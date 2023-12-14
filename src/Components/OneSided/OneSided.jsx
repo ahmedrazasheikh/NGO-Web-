@@ -1,6 +1,6 @@
 import { React , useEffect} from 'react';
 import '../../Animation.css'
-import img1 from '../../Images/elderly-men-are-exposed-rainwater-dry-weather-global-warming_1150-16274.jpg'
+import img1 from '../../Images/WHAT-SETS-US-APART.jpg'
 const OneSided = () => {
   useEffect(() => {
     const cards1 = document.querySelectorAll('.right-animation');

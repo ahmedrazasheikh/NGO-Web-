@@ -24,11 +24,12 @@ const Login = () => {
 
     if (isValid) {
       login(); // Set authentication state
-      navigate('/Dashboard');
+      navigate('/Dashboard'); // Use navigate from react-router-dom
     } else {
       setError('Email or password is not correct.');
     }
   };
+
 
   return (
     <section className="bg-gray-50 dark:bg-gray-900">
